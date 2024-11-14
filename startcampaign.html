@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start a Campaign | Crowdfunding</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/campaign.css">
+    <link rel="stylesheet" href="./css/">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo"><a href="/"><h1>Crowd<span>Fund</span></h1></a></div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="start-campaign.html" class="active">Start a Campaign</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Start a Campaign Form -->
+    <div class="campaign-form">
+        <h2>Start a Campaign</h2>
+        <p>Share your story and goals to inspire others to contribute to your cause.</p>
+
+        <form action="#" method="POST" enctype="multipart/form-data">
+            
+            <!-- Campaign Title -->
+            <label for="title">Campaign Title</label>
+            <input type="text" id="title" name="title" placeholder="Enter a catchy title" required>
+
+            <!-- Campaign Goal -->
+            <label for="goal">Campaign Goal (₹)</label>
+            <input type="number" id="goal" name="goal" placeholder="Enter funding goal" required>
+
+            <!-- Campaign Category -->
+            <label for="category">Campaign Category</label>
+            <select id="category" name="category" required>
+                <option value="charity">Charity</option>
+                <option value="creative">Creative</option>
+                <option value="personal">Personal</option>
+                <option value="product">Product Launch</option>
+            </select>
+
+            <!-- Duration -->
+            <label for="duration">Campaign Duration (days)</label>
+            <input type="number" id="duration" name="duration" placeholder="Number of days for funding" required>
+
+            <!-- Description -->
+            <label for="description">Campaign Description</label>
+            <textarea id="description" name="description" rows="6" placeholder="Describe your campaign goals, story, and purpose" required></textarea>
+
+            <!-- Funding Breakdown -->
+            <label for="breakdown">Funding Breakdown</label>
+            <textarea id="breakdown" name="breakdown" rows="4" placeholder="How will you use the funds raised?" required></textarea>
+
+            <!-- Media Upload -->
+            <label for="cover">Cover Image or Video</label>
+            <input type="file" id="cover" name="cover" accept="image/*, video/*" required>
+
+            <!-- Gallery -->
+            <label for="gallery">Additional Images (Optional)</label>
+            <input type="file" id="gallery" name="gallery[]" accept="image/*" multiple>
+
+            <!-- Rewards/Tiers -->
+            <label for="rewards">Rewards/Tiers (Optional)</label>
+            <textarea id="rewards" name="rewards" rows="4" placeholder="Describe any rewards for different donation amounts"></textarea>
+
+            <!-- Creator Information -->
+            <div class="creator-info">
+                <h3>Creator Information</h3>
+                <label for="creator-name">Your Name</label>
+                <input type="text" id="creator-name" name="creator-name" placeholder="Enter your name" required>
+
+                <label for="creator-bio">Your Bio</label>
+                <textarea id="creator-bio" name="creator-bio" rows="3" placeholder="Tell backers a little about yourself" required></textarea>
+            </div>
+
+            <!-- Terms & Agreements -->
+            <div class="agreements">
+                <label>
+                    <input type="checkbox" name="terms" required>
+                    I agree to the <a href="#">Terms and Conditions</a>.
+                </label>
+                <label>
+                    <input type="checkbox" name="privacy" required>
+                    I acknowledge the <a href="#">Privacy Policy</a>.
+                </label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Campaign</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Crowdfunding Platform. Created with ❤️ by <a href="#">HARSH RAI</a></p>
+    </footer>
+</body>
+</html>

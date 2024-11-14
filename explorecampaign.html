@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Campaigns - Crowdfunding Platform</title>
+    <link rel="stylesheet" href="css/explore.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Explore & Support Campaigns That Matter</h1>
+            <form class="search-bar">
+                <input type="text" placeholder="Search campaigns..." name="search">
+                <button type="submit">Search</button>
+            </form>
+            <div class="filters">
+                <button class="filter-btn">Health</button>
+                <button class="filter-btn">Education</button>
+                <button class="filter-btn">Technology</button>
+                <button class="filter-btn">Environment</button>
+                <button class="filter-btn">Personal</button>
+                <button class="filter-btn">Creative</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Campaigns -->
+    <section class="featured-campaigns">
+        <h2>Trending Campaigns</h2>
+        <div class="campaigns-grid">
+            <div class="campaign-card">
+                <img src="images/campaign1.jpg" alt="Campaign Image">
+                <h3>Clean Water for All</h3>
+                <p>Help us bring clean drinking water to remote villages.</p>
+                <div class="campaign-progress">
+                    <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+                <p>₹ 70,000 raised of ₹ 100,000</p>
+                <button>Support</button>
+            </div>
+            <div class="campaign-card">
+                <img src="images/campaign2.jpg" alt="Campaign Image">
+                <h3>Education for Every Child</h3>
+                <p>Providing access to quality education for underprivileged children.</p>
+                <div class="campaign-progress">
+                    <div class="progress-bar" style="width: 45%;"></div>
+                </div>
+                <p>₹ 45,000 raised of ₹ 100,000</p>
+                <button>Support</button>
+            </div>
+            <!-- Add more campaign cards as needed -->
+        </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="categories">
+        <h2>Explore by Category</h2>
+        <div class="category-list">
+            <div class="category-item">Health</div>
+            <div class="category-item">Education</div>
+            <div class="category-item">Technology</div>
+            <div class="category-item">Environment</div>
+            <div class="category-item">Personal</div>
+            <div class="category-item">Creative</div>
+        </div>
+    </section>
+
+    <!-- Campaign List Section -->
+    <section class="campaign-list">
+        <h2>All Campaigns</h2>
+        <div class="sorting-options">
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+                <option value="most-funded">Most Funded</option>
+                <option value="newest">Newest</option>
+                <option value="ending-soon">Ending Soon</option>
+            </select>
+        </div>
+        <div class="campaigns-grid">
+            <div class="campaign-card">
+                <img src="images/campaign3.jpg" alt="Campaign Image">
+                <h3>Support Green Initiatives</h3>
+                <p>Join us in planting trees and restoring forests worldwide.</p>
+                <div class="campaign-progress">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+                <p>₹ 80,000 raised of ₹ 100,000</p>
+                <button>Support</button>
+            </div>
+            <!-- Add more campaign cards here -->
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <h3>Step 1</h3>
+                <p>Find a campaign that aligns with your values.</p>
+            </div>
+            <div class="step">
+                <h3>Step 2</h3>
+                <p>Choose a support level and make a contribution.</p>
+            </div>
+            <div class="step">
+                <h3>Step 3</h3>
+                <p>Share the campaign to maximize impact.</p>
+            </div>
+            <div class="step">
+                <h3>Step 4</h3>
+                <p>Stay updated on the difference your support makes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter">
+        <h2>Stay Informed</h2>
+        <p>Sign up to receive updates on new and impactful campaigns.</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Crowdfunding Platform. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
